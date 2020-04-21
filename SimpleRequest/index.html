@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Navent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+
+<body>
+  <form id='form'>
+    <h1 class="title">Add New Order</h1>
+
+    <div class="field">
+      <label class="label">Name</label>
+      <div class="control">
+        <input name="name" class="input" type="text" maxlength="100">
+      </div>
+      <p class="help is-danger invisible">Name length should be less than 100</p>
+    </div>
+
+    <div class="field">
+      <label class="label">Amount</label>
+      <div class="control has-icons-left">
+        <input name="amount" class="input is-success" required>
+        <span class="icon is-small is-left">
+          <i class="fas fa-dollar-sign"></i>
+        </span>
+      </div>
+      <p class="help is-danger invisible">This field has to be a number</p>
+    </div>
+
+    <div class="field">
+      <label class="label">Discount</label>
+      <div class="control has-icons-left">
+        <input name="discount" class="input is-success">
+        <span class="icon is-small is-left">
+          <i class="fas fa-dollar-sign"></i>
+        </span>
+      </div>
+      <p class="help is-danger invisible">This field has to be a number</p>
+    </div>
+
+    <div class="buttons field is-grouped">
+      <div class="control">
+        <button class="button is-link is-fullwidth">Submit</button>
+      </div>
+      <div class="control">
+        <button class="button is-link is-light">Cancel</button>
+      </div>
+    </div>
+  </form>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
+
